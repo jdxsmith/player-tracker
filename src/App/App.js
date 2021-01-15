@@ -2,6 +2,7 @@ import './App.css'
 import { Component } from 'react'
 import NavBar from '../NavBar/NavBar'
 import TeamStats from '../TeamStats/TeamStats'
+import PlayersList from '../PlayersList/PlayersList'
 // import { Switch, Route, Link, Router } from "react-router-dom"
 
 class App extends Component {
@@ -14,7 +15,7 @@ class App extends Component {
       <section className='app'>
         <NavBar />
         <TeamStats />
-        {/* <PlayersList /> */}
+        <PlayersList />
       </section>
     )
   }
