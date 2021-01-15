@@ -1,0 +1,17 @@
+.player-search-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.name-search-bar {
+  height: 30px;
+  width: 500px;
+  margin-bottom: 20px;
+}
+
+.player-search-btn {
+  height: 30px;
+  width: 200px;
+}

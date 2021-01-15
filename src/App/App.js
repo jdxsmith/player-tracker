@@ -1,6 +1,7 @@
 import './App.css'
-import NavBar from '../NavBar/NavBar'
 import { Component } from 'react'
+import NavBar from '../NavBar/NavBar'
+import SearchBar from '../SearchBar/SearchBar'
 // import { Switch, Route, Link, Router } from "react-router-dom"
 
 class App extends Component {
@@ -12,6 +13,7 @@ class App extends Component {
     return(
       <section className='app'>
         <NavBar />
+        <SearchBar />
       </section>
     )
   }
