@@ -1,0 +1,15 @@
+.player-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 2px solid #128639;
+  border-radius: 5px;
+  padding: 10px;
+  height: 100px;
+  width: 200px;
+  font-size: 18px;
+}
+
+.player-card:hover {
+  cursor: pointer;
+}

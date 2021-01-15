@@ -24,9 +24,9 @@ class TeamStats extends Component {
   render() {
     return(
       <section className='team-stats'>
-        <p>Team Name: {this.state.fullName}</p>
-        <p>Conference: {this.state.conference}</p>
-        <p>Division: {this.state.division}</p>
+        <p className='team-name'>{this.state.fullName}</p>
+        <p>{this.state.conference}ern Conference</p>
+        <p>{this.state.division} Division</p>
       </section>
     )
   }

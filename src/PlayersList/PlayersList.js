@@ -1,19 +1,21 @@
 import './PlayersList.css'
 import { Component } from 'react'
+import PlayerCard from '../PlayerCard/PlayerCard'
 
 class PlayersList extends Component {
   constructor() {
     super()
     this.state = {
-      players: []
+      players: [132, 378]
     }
   }
 
   render() {
     return(
       <section className='players-list'>
-        <p>All Mavs players go here</p>
-        {/* <PlayerCard /> */}
+        {this.state.players.map(player => {
+          return <PlayerCard id={player} key={player}/>
+        })}
       </section>
     )
   }

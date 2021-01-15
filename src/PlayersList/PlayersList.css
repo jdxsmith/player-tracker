@@ -1,6 +1,6 @@
 .players-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  padding: 20px;
 }
