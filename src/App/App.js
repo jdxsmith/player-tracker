@@ -1,4 +1,5 @@
-import './App.css';
+import './App.css'
+import NavBar from '../NavBar/NavBar'
 import { Component } from 'react'
 // import { Switch, Route, Link, Router } from "react-router-dom"
 
@@ -10,10 +11,10 @@ class App extends Component {
   render() {
     return(
       <section className='app'>
-        <p>PlayerTracker</p>
+        <NavBar />
       </section>
     )
   }
 }
 
-export default App;
+export default App

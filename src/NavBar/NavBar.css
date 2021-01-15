@@ -1,0 +1,25 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  height: 60px;
+  background-color: #222831;
+}
+
+/* .basketball-logo {
+  height: 100px;
+  width: 200px;
+  background-color: none;
+} */
+
+h1 {
+  font-size: 30px;
+  color: whitesmoke
+}
+
+.fav-players-btn {
+  padding: 20px;
+  border-radius: 10px;
+}
