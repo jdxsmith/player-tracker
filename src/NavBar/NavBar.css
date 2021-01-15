@@ -5,21 +5,22 @@ nav {
   align-items: center;
   padding: 20px;
   height: 60px;
-  background-color: #222831;
+  background-color: white;
 }
 
-/* .basketball-logo {
-  height: 100px;
-  width: 200px;
-  background-color: none;
-} */
+.mavs-logo {
+  height: 150px;
+  width: 150px;
+}
 
 h1 {
   font-size: 30px;
-  color: whitesmoke
+  color: #002958;
 }
 
 .fav-players-btn {
+  /* height: 150px; */
+  width: 150px;
   padding: 20px;
   border-radius: 10px;
 }
