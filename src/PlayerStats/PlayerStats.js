@@ -23,7 +23,16 @@ class PlayerStats extends Component {
     }))
   }
 
-  
+  render() {
+    return(
+      <section className='player-averages'>
+        <p>PPG: {this.state.points}</p>
+        <p>RPG: {this.state.rebounds}</p>
+        <p>APG: {this.state.assists}</p>
+        <p>FG%: {this.state.fgpct}</p>
+      </section>
+    )
+  }
 }
 
 export default PlayerStats
