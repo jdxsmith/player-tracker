@@ -4,7 +4,7 @@ import NavBar from '../NavBar/NavBar'
 import TeamStats from '../TeamStats/TeamStats'
 import PlayersList from '../PlayersList/PlayersList'
 import PlayerStats from '../PlayerStats/PlayerStats'
-import { Switch, Route, Link, Router } from "react-router-dom"
+import { Switch, Route } from 'react-router-dom'
 
 class App extends Component {
   constructor() {

@@ -1,5 +1,6 @@
 import './PlayerStats.css'
 import { Component } from 'react'
+import { Link } from 'react-router-dom'
 import { getPlayerAverages } from '../apiCalls'
 
 class PlayerStats extends Component {
@@ -25,11 +26,16 @@ class PlayerStats extends Component {
 
   render() {
     return(
-      <section className='player-averages'>
-        <p>PPG: {this.state.points}</p>
-        <p>RPG: {this.state.rebounds}</p>
-        <p>APG: {this.state.assists}</p>
-        <p>FG%: {this.state.fgpct}</p>
+      <section className='player-stats-page'>
+        <section className='player-averages'>
+          <p>PPG: {this.state.points}</p>
+          <p>RPG: {this.state.rebounds}</p>
+          <p>APG: {this.state.assists}</p>
+          <p>FG%: {this.state.fgpct}</p>
+        </section>
+        <Link to='/'>
+          <button className='back-to-players-btn'>Back To All Players</button>
+        </Link>
       </section>
     )
   }
