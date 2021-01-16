@@ -105,8 +105,12 @@ class App extends Component {
             path='/:id'
             render={ ({match}) => {
               const playerId = parseInt(match.params.id)
+              const selectedPlayer = this.state.players.find(player => {
+                return player.id === playerId
+              })
               return(
                 <section>
+                  <p>{selectedPlayer.name}</p>
                   <PlayerStats id={ playerId }/>
                 </section>
               )
