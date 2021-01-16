@@ -103,10 +103,11 @@ class App extends Component {
           <Route
             exact
             path='/:id'
-            render={ () => {
+            render={ ({match}) => {
+              const playerId = parseInt(match.params.id)
               return(
                 <section>
-                  <PlayerStats />
+                  <PlayerStats id={ playerId }/>
                 </section>
               )
             }}

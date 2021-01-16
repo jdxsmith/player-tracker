@@ -16,10 +16,10 @@ class PlayerStats extends Component {
   componentDidMount = async () => {
     await getPlayerAverages(this.props.id)
     .then(data => this.setState({
-      points: data.data.pts,
-      rebounds: data.data.reb,
-      assists: data.data.ast,
-      fgpct: data.data.fg_pct
+      points: data.data[0].pts,
+      rebounds: data.data[0].reb,
+      assists: data.data[0].ast,
+      fgpct: data.data[0].fg_pct
     }))
   }
 
