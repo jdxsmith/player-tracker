@@ -3,7 +3,7 @@ import { Component } from 'react'
 import NavBar from '../NavBar/NavBar'
 import TeamStats from '../TeamStats/TeamStats'
 import PlayersList from '../PlayersList/PlayersList'
-// import { Switch, Route, Link, Router } from "react-router-dom"
+import { Switch, Route, Link, Router } from "react-router-dom"
 
 class App extends Component {
   constructor() {
@@ -14,8 +14,31 @@ class App extends Component {
     return(
       <section className='app'>
         <NavBar />
-        <TeamStats />
-        <PlayersList />
+        <Switch>
+          <Route
+            exact
+            path='/'
+            render={ () => {
+              return(
+                <section>
+                  <TeamStats />
+                  <PlayersList />
+                </section>
+              )
+            }}
+          />
+          <Route
+            exact
+            path='/:id'
+            render={ () => {
+              return(
+                <section>
+                  {/* <PlayerStats /> */}
+                </section>
+              )
+            }}
+          />
+        </Switch>
       </section>
     )
   }
