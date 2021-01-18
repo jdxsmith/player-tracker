@@ -5,7 +5,7 @@ jest.mock('../apiCalls.js')
 import '@testing-library/jest-dom'
 import App from '../App/App'
 
-describe.only("PlayersList", () => {
+describe("PlayersList", () => {
   beforeEach(() => {
     getPlayerStats.mockResolvedValueOnce({
       "id": 132,
