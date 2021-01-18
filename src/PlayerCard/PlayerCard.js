@@ -1,6 +1,7 @@
 import './PlayerCard.css'
 import { Component } from 'react'
 import { getPlayerStats } from '../apiCalls'
+import { Link } from 'react-router-dom'
 
 class PlayerCard extends Component {
   constructor(props) {
@@ -23,10 +24,12 @@ class PlayerCard extends Component {
 
   render() {
     return(
-      <article className='player-card'>
-        <p>{`${this.state.firstName} ${this.state.lastName}`}</p>
-        <p>{this.state.position}</p>
-      </article>
+      <Link to={`/${this.props.id}`}>
+        <article className='player-card'>
+          <p>{`${this.state.firstName} ${this.state.lastName}`}</p>
+          <p>{this.state.position}</p>
+        </article>
+      </Link>
     )
   }
 }
