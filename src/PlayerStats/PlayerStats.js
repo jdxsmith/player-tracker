@@ -26,7 +26,7 @@ class PlayerStats extends Component {
 
   render() {
     return(
-      <section className='player-stats-page'>
+      <section>
         <section className='player-averages'>
           <p>PPG: {this.state.points}</p>
           <p>RPG: {this.state.rebounds}</p>

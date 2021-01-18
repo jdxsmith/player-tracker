@@ -109,7 +109,7 @@ class App extends Component {
                 return player.id === playerId
               })
               return(
-                <section>
+                <section className='player-stats-page'>
                   <p>{selectedPlayer.name}</p>
                   <PlayerStats id={ playerId }/>
                 </section>
