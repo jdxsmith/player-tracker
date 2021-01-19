@@ -15,7 +15,7 @@ const FavoritePlayers = () => {
   return (
     <section className="favorite-players">
       <h2>Favorite Players</h2>
-      <article className="user-favs">
+      <article>
         {getFavoritePlayers() ? displayPlayers(getFavoritePlayers()) : <p>You don't have any favorite players yet!</p>}
       </article>
       <Link to='/'>
