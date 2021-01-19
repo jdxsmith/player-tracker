@@ -105,6 +105,7 @@ class App extends Component {
     return(
       <section className='app'>
         <NavBar />
+        <Switch>
           <Route
             exact
             path='/'
@@ -142,6 +143,7 @@ class App extends Component {
               )
             }}
           />
+        </Switch>
       </section>
     )
   }
