@@ -4,6 +4,7 @@ import NavBar from '../NavBar/NavBar'
 import TeamStats from '../TeamStats/TeamStats'
 import PlayersList from '../PlayersList/PlayersList'
 import PlayerStats from '../PlayerStats/PlayerStats'
+import FavoritePlayers from '../FavoritePlayers/FavoritePlayers'
 import { Switch, Route } from 'react-router-dom'
 
 class App extends Component {
@@ -119,6 +120,15 @@ class App extends Component {
           />
           <Route
             exact
+            path='/players/favorites'
+            render={ () => {
+              return(
+                <FavoritePlayers />
+              )
+            }}
+          />
+          <Route
+            exact
             path='/:id'
             render={ ({match}) => {
               const playerId = parseInt(match.params.id)
@@ -128,7 +138,7 @@ class App extends Component {
               return(
                 <section className='player-stats-page'>
                   <p className='player-page-name'>{selectedPlayer.name}</p>
-                  <PlayerStats id={ playerId }/>
+                  <PlayerStats player={selectedPlayer} id={ playerId }/>
                 </section>
               )
             }}
