@@ -15,7 +15,7 @@ describe("TeamStats", () => {
       "division": "Southnorth",
       "full_name": "Test Team",
       "name": "Mavericks"
-  })
+    })
 
     render(
       <MemoryRouter>

@@ -34,7 +34,7 @@ describe("PlayerStats", () => {
           "ft_pct":0.674
         }
       ]
-  })
+    })
 
     render(
       <MemoryRouter>
