@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# [MavsTracker](https://jdxsmith.github.io/player-tracker/) *Mod 3 Final - Solo*
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img width="1200" alt="Screen Shot 2021-01-19 at 8 02 22 AM" src="https://user-images.githubusercontent.com/67242223/105052103-b95ef100-5a2c-11eb-9784-1fcd3233f2d0.png">
 
-## Available Scripts
+## Contributors
+- [Jordon Smith](https://github.com/jdxsmith)
 
-In the project directory, you can run:
+## Table of Contents
+* [Project Overview](#project-overview)
+* [Goals](#goals)
+* [Technologies And Tools](#technologies-and-tools)
+* [Challenges](#challenges)
+* [Wins](#wins)
+* [Roadmap](#roadmap)
 
-### `npm start`
+## Project Overview
+This Mod 3 Final Solo project is used to demonstrate my understanding of React, Router, and asynchronous JavaScript.  The app that I built allows fans of the Dallas Mavericks to view stats from each player on the team.  These stats are being pulled from an API and updated every 10 minutes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Goals
+* Display a solid understanding of React and Router
+* Use asynchronous JS
+* Write strong unit and integration tests
+* Become more familiar with formatting data when pulling from an API
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Technologies And Tools
+> * React
+> * React Testing (with Jest)
+> * Router
+> * JavaScript
+> * JSX
+> * CSS
+> * git
+> * GitHub
+<details>
+  <summary>Set up</summary>
 
-### `npm test`
+* *Click* the **Fork** button on the top right-hand corner of this page
+* Clone the repository down and cd into the repo on your local machine by running:
+  * `git clone git@github.com:jdxsmith/player-tracker.git`
+  * `cd player-tracker`
+* Install the library dependencies by running:
+  * `npm install`
+* To verify that it is setup correctly, run `npm start` in your terminal.
+* Go to `http://localhost:3000/` and you should see the site.
+* Enter `control + c` in your terminal to stop the server at any time.
+</details>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Challenges
+* Manipulating the data from an API to create an application that fits your needs
 
-### `npm run build`
+## Wins
+* Strong understanding of React and Router fundamentals
+* Becoming more comfortable with React testing
+* Consistency with PR template
+* Gained familiarity with asynchronous JS
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Roadmap
+* With more time, I would like to enhance the UI/UX for:
+  * Player Cards
+  * Player Stats
+* Add more sad path testing
+* Load in more data on each player
+* Add in pictures of each player
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Project Managers:
+#### Leta Keane
+#### Will Mitchell
