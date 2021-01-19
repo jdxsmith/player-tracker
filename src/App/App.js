@@ -4,6 +4,7 @@ import NavBar from '../NavBar/NavBar'
 import TeamStats from '../TeamStats/TeamStats'
 import PlayersList from '../PlayersList/PlayersList'
 import PlayerStats from '../PlayerStats/PlayerStats'
+import FavoritePlayers from '../FavoritePlayers/FavoritePlayers'
 import { Switch, Route } from 'react-router-dom'
 
 class App extends Component {
@@ -104,7 +105,6 @@ class App extends Component {
     return(
       <section className='app'>
         <NavBar />
-        <Switch>
           <Route
             exact
             path='/'
@@ -114,6 +114,15 @@ class App extends Component {
                   <TeamStats />
                   <PlayersList players={this.state.players}/>
                 </section>
+              )
+            }}
+          />
+          <Route
+            exact
+            path='/players/favorites'
+            render={ () => {
+              return(
+                <FavoritePlayers />
               )
             }}
           />
@@ -133,19 +142,6 @@ class App extends Component {
               )
             }}
           />
-          <Route
-            exact
-            path='/favorites'
-            render={ () => {
-              return(
-                <section className='favorite-players-page'>
-                  <h2>Favorite Players</h2>
-                  {/* <FavoritePlayers /> */}
-                </section>
-              )
-            }}
-          />
-        </Switch>
       </section>
     )
   }
