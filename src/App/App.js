@@ -12,12 +12,12 @@ class App extends Component {
     this.state = {
       players: [
         {
-          name: 'Jalen Brunson',
-          id: 73
-        },
-        {
           name: 'Tyler Bey',
           id: 3547265
+        },
+        {
+          name: 'Jalen Brunson',
+          id: 73
         },
         {
           name: 'Trey Burke',
