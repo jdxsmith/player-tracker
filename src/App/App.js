@@ -133,6 +133,18 @@ class App extends Component {
               )
             }}
           />
+          <Route
+            exact
+            path='/favorites'
+            render={ () => {
+              return(
+                <section className='favorite-players-page'>
+                  <h2>Favorite Players</h2>
+                  {/* <FavoritePlayers /> */}
+                </section>
+              )
+            }}
+          />
         </Switch>
       </section>
     )
