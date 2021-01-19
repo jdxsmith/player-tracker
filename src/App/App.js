@@ -128,7 +128,7 @@ class App extends Component {
               return(
                 <section className='player-stats-page'>
                   <p className='player-page-name'>{selectedPlayer.name}</p>
-                  <PlayerStats id={ playerId }/>
+                  <PlayerStats player={selectedPlayer} id={ playerId }/>
                 </section>
               )
             }}

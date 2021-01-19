@@ -24,6 +24,17 @@ class PlayerStats extends Component {
     }))
   }
 
+  addFavoritePlayer = event => {
+    event.preventDefault();
+    if (!JSON.parse(localStorage.getItem('favoritePlayers'))) {
+      localStorage.setItem('favoritePlayers', JSON.stringify([this.props.player]))
+    } else {
+      const favoritesList = JSON.parse(localStorage.getItem('favoritePlayers'))
+      favoritesList.push(this.props.player)
+      localStorage.setItem('favoritePlayers', JSON.stringify(favoritesList))
+    }
+  }
+
   render() {
     return(
       <section className='player-stats-view'>
@@ -33,7 +44,7 @@ class PlayerStats extends Component {
           <p>APG: {this.state.assists}</p>
           <p>FG%: {this.state.fgpct}</p>
         </section>
-        <button className='back-to-players-btn'>Add to Favorite Players</button>
+        <button className='back-to-players-btn' onClick={this.addFavoritePlayer}>Add to Favorite Players</button>
         <Link to='/'>
           <button className='back-to-players-btn'>Back To All Players</button>
         </Link>
