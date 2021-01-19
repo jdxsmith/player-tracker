@@ -12,72 +12,89 @@ class App extends Component {
     this.state = {
       players: [
         {
-          name: 'Jalen Brunson',
-          id: 73
+          name: 'Tyler Bey',
+          id: 3547265,
+          number: 2
         },
         {
-          name: 'Tyler Bey',
-          id: 3547265
+          name: 'Jalen Brunson',
+          id: 73,
+          number: 13
         },
         {
           name: 'Trey Burke',
-          id: 76
+          id: 76,
+          number: 3
         },
         {
           name: 'Willie Cauley-Stein',
-          id: 91
+          id: 91,
+          number: 33
         },
         {
           name: 'Luka Doncic',
-          id: 132
+          id: 132,
+          number: 77
         },
         {
           name: 'Dorian Finney-Smith',
-          id: 158
+          id: 158,
+          number: 10
         },
         {
           name: 'Josh Green',
-          id: 3547258
+          id: 3547258,
+          number: 8
         },
         {
           name: 'Tim Hardaway Jr.',
-          id: 191
+          id: 191,
+          number: 11
         },
         {
           name: 'Nate Hinton',
-          id: 3547281
+          id: 3547281,
+          number: 14
         },
         {
           name: 'Wes Iwundu',
-          id: 230
+          id: 230,
+          number: 25
         },
         {
           name: 'James Johnson',
-          id: 242
+          id: 242,
+          number: 16
         },
         {
           name: 'Maxi Kleber',
-          id: 257
+          id: 257,
+          number: 42
         },
         {
           name: 'Boban Marjanovic',
-          id: 296
+          id: 296,
+          number: 51
         },
         {
           name: 'Kristaps Porzingis',
-          id: 378
+          id: 378,
+          number: 6
         },
         {
           name: 'Dwight Powell',
-          id: 379
+          id: 379,
+          number: 7
         },
         {
           name: 'Josh Richardson',
-          id: 391
+          id: 391,
+          number: 0
         },
         {
           name: 'Tyrell Terry',
-          id: 3547255
+          id: 3547255,
+          number: 1
         }
       ]
     }
@@ -110,7 +127,7 @@ class App extends Component {
               })
               return(
                 <section className='player-stats-page'>
-                  <p>{selectedPlayer.name}</p>
+                  <p className='player-page-name'>{selectedPlayer.name}</p>
                   <PlayerStats id={ playerId }/>
                 </section>
               )

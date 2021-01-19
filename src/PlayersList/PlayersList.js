@@ -5,7 +5,7 @@ const PlayersList = (props) => {
   return(
     <section className='players-list'>
       {props.players.map(player => {
-        return <PlayerCard id={player.id} key={player.id}/>
+        return <PlayerCard number={player.number} id={player.id} key={player.id}/>
       })}
     </section>
   )

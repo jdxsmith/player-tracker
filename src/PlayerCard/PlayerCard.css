@@ -1,15 +1,28 @@
 .player-card {
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  border: 2px solid #128639;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 4px 6px;
   border-radius: 5px;
   padding: 10px;
+  transition: width .75s, height .75s;
   height: 100px;
   width: 200px;
   font-size: 18px;
+  background-color: #FFFEE0;
+  color: #002958;
 }
 
 .player-card:hover {
   cursor: pointer;
+  transition: width .75s, height .75s;
+  height: 150px;
+  width: 300px;
+  box-shadow: 4px 6px;
+  color: #002958;
+}
+
+.player-card-number {
+  font-size: 30px;
 }

@@ -24,10 +24,15 @@ class PlayerCard extends Component {
 
   render() {
     return(
-      <Link to={`/${this.props.id}`}>
+      <Link to={`/${this.props.id}`} style={{ textDecoration: 'none' }}>
         <article className='player-card'>
-          <p>{`${this.state.firstName} ${this.state.lastName}`}</p>
-          <p>{this.state.position}</p>
+          <div>
+            <p>{`${this.state.firstName} ${this.state.lastName}`}</p>
+            <p>{this.state.position}</p>
+          </div>
+          <div className='player-card-number'>
+            <p>{`#${this.props.number}`}</p>
+          </div>
         </article>
       </Link>
     )
